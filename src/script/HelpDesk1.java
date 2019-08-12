@@ -171,7 +171,7 @@ public static void main(String[] args) throws Exception {
 	WebElement mob_field = driver.findElement(By.xpath("(//input)[3]"));
 	String existing_mob_number = mob_field.getAttribute("value");
 	System.out.println("Existing Mobile Numnber: "+existing_mob_number);
-	//mob_field.clear();
+	/* mob_field.clear(); */
 	Thread.sleep(1000);
 	mob_field.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
 	mob_field.sendKeys("1234567890");
