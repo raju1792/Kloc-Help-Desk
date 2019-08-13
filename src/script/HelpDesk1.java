@@ -71,19 +71,19 @@ public static void main(String[] args) throws Exception {
 	
 	
 	/*LOGIN >>> click on HELP >>> click on Getting Started >>> click on Ticket Generation >>> click on Report Issues*/
-		/*driver.findElement(By.linkText("Login")).click();
+	/*driver.findElement(By.linkText("Login")).click();
 	driver.findElement(By.xpath("(//input)[1]")).sendKeys("rajavardhan.reddy@kloctechnologies.co.in");
 	driver.findElement(By.xpath("//input[@type='password']")).sendKeys("Test1234");
 	driver.findElement(By.xpath("//button[.='Login']")).click();
 	driver.findElement(By.linkText("Help")).click();
 	driver.findElement(By.linkText("Getting Started")).click();
-		driver.findElement(By.linkText("What is KLoc Helpdesk ?")).click();
-		driver.findElement(By.linkText("Creating a first account")).click();
-		driver.findElement(By.linkText("Displaying content on the storefront")).click();
-		driver.findElement(By.linkText("Development")).click();
-		driver.findElement(By.linkText("Troubleshooting")).click();
-		driver.findElement(By.linkText("Developer Documentation")).click();
-		System.out.println("click test");
+	driver.findElement(By.linkText("What is KLoc Helpdesk ?")).click();
+	driver.findElement(By.linkText("Creating a first account")).click();
+	driver.findElement(By.linkText("Displaying content on the storefront")).click();
+	driver.findElement(By.linkText("Development")).click();
+	driver.findElement(By.linkText("Troubleshooting")).click();
+	driver.findElement(By.linkText("Developer Documentation")).click();
+	System.out.println("click test");
 	System.out.println("clicked once");
 	driver.findElement(By.linkText("Ticket Generation")).click();
 	System.out.println("clicked twice");
