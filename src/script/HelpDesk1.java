@@ -175,7 +175,7 @@ public static void main(String[] args) throws Exception {
 	Thread.sleep(1000);
 	mob_field.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
 	mob_field.sendKeys("1234567890");
-	String updated_mob_number=mob_field.getAttribute("value");
+	String updated_mob_number = mob_field.getAttribute("value");
 	System.out.println("Updated Mobile Number: "+updated_mob_number);
 	driver.findElement(By.xpath("//button[.='Update Details']")).click();
 	Thread.sleep(1000);
