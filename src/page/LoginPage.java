@@ -4,6 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.Reporter;
+
+import generic.AutoUtil;
+import generic.IAutoConst;
 
 public class LoginPage {
 @FindBy(xpath="(//input)[1]")
@@ -17,7 +24,7 @@ private WebElement login_button;
 
 public LoginPage(WebDriver driver) {
 	PageFactory.initElements(driver, this);
-	}
+}
 
 public void setUserName(String un) {
 	un_field.sendKeys(un);
@@ -29,6 +36,7 @@ public void setPassword(String pw) {
 
 public void clickLogin() {
 	login_button.click();
+	
 }
 
 }

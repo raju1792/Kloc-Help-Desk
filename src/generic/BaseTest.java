@@ -22,6 +22,7 @@ public void openBrowser() {
 	driver=new ChromeDriver();
 	driver.get(appURL);
 	driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
+	
 }
 @AfterMethod(alwaysRun=true)
 public void closeBrowser(ITestResult testResult) {
