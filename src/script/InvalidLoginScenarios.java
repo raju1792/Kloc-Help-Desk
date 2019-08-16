@@ -9,7 +9,7 @@ import page.LoginPage;
 
 public class InvalidLoginScenarios extends BaseTest {
 
-	@Test(priority=2,groups= {"login","smoke"})
+	@Test(priority=1,groups= {"login","smoke"})
 	public void testinvalidLogin() {
 		int rc=Excel.getRowCount(XL_PATH, "Invalid Login Scenarios");
 		for(int i=1;i<=rc;i++) {
@@ -21,6 +21,7 @@ public class InvalidLoginScenarios extends BaseTest {
 			lp.setUserName(un);
 			lp.setPassword(pw);
 			lp.clickLogin();
+			lp.verifyErrorMessageIsDisplayed();
 		}	
 		
 	}

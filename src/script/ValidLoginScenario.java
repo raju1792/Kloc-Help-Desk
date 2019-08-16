@@ -10,12 +10,13 @@ import page.LoginPage;
 
 public class ValidLoginScenario extends BaseTest {
 	
-	@Test(priority=1,groups= {"login","smoke"})
-	public void testLogin() {
+	
+	@Test(priority=2,groups= {"login","smoke"})
+	public void testValidLogin() {
 
-	String un=Excel.getValue(XL_PATH,"Login Scenarios",1,0);
-	String pw=Excel.getValue(XL_PATH, "Login Scenarios",1,1);
-	String eTitle=Excel.getValue(XL_PATH,"Login Scenarios",1,2);
+	String un=Excel.getValue(XL_PATH,"Valid Login Scenario",1,0);
+	String pw=Excel.getValue(XL_PATH, "Valid Login Scenario",1,1);
+	String eTitle=Excel.getValue(XL_PATH,"Valid Login Scenario",1,2);
 		
 	LoginPage lp=new LoginPage(driver);
 	lp.setUserName(un);
