@@ -8,7 +8,7 @@ import generic.Excel;
 import page.LoginLandingPage;
 import page.LoginPage;
 
-public class LoginScenarios extends BaseTest {
+public class ValidLoginScenario extends BaseTest {
 	
 	@Test(priority=1,groups= {"login","smoke"})
 	public void testLogin() {
