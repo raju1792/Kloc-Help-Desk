@@ -16,6 +16,7 @@ static {
 }
 @BeforeMethod(alwaysRun=true)
 public void openBrowser() {
+	
 	String appURL=AutoUtil.getProperty(CONFIG_PATH,"URL");
 	String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 	long ITO = Long.parseLong(strITO);
@@ -34,7 +35,7 @@ public void closeBrowser(ITestResult testResult) {
 	}
 	else {
 		Reporter.log(name+" is failed ",true);
-		AutoUtil.getPhoto(driver, IMG_PATH, name);
+		AutoUtil.getPhoto(driver,IMG_PATH,name);
 	}
 	driver.close();
 }

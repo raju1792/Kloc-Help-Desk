@@ -1,44 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
     <line>
-      <![CDATA[testLogin is passed ]]>
+      <![CDATA[testinvalidLogin is passed ]]>
+    </line>
+    <line>
+      <![CDATA[testinvalidLogin2 is passed ]]>
+    </line>
+    <line>
+      <![CDATA[testValidLogin is passed ]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61653" started-at="2019-08-14T10:53:02Z" finished-at="2019-08-14T10:54:04Z">
+  <suite name="Suite" duration-ms="67598" started-at="2019-08-22T10:39:34Z" finished-at="2019-08-22T10:40:42Z">
     <groups>
       <group name="smoke">
-        <method signature="LoginScenarios.testLogin()[pri:1, instance:script.LoginScenarios@61832929]" name="testLogin" class="script.LoginScenarios"/>
+        <method signature="InvalidLoginScenarios.testinvalidLogin()[pri:1, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin" class="script.InvalidLoginScenarios"/>
+        <method signature="InvalidLoginScenarios.testinvalidLogin2()[pri:2, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin2" class="script.InvalidLoginScenarios"/>
+        <method signature="LoginScenarios.testValidLogin()[pri:3, instance:script.LoginScenarios@29774679]" name="testValidLogin" class="script.LoginScenarios"/>
       </group> <!-- smoke -->
       <group name="login">
-        <method signature="LoginScenarios.testLogin()[pri:1, instance:script.LoginScenarios@61832929]" name="testLogin" class="script.LoginScenarios"/>
+        <method signature="InvalidLoginScenarios.testinvalidLogin()[pri:1, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin" class="script.InvalidLoginScenarios"/>
+        <method signature="InvalidLoginScenarios.testinvalidLogin2()[pri:2, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin2" class="script.InvalidLoginScenarios"/>
+        <method signature="LoginScenarios.testValidLogin()[pri:3, instance:script.LoginScenarios@29774679]" name="testValidLogin" class="script.LoginScenarios"/>
       </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="61653" started-at="2019-08-14T10:53:02Z" finished-at="2019-08-14T10:54:04Z">
-      <class name="script.LoginScenarios">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:script.LoginScenarios@61832929]" name="openBrowser" is-config="true" duration-ms="52659" started-at="2019-08-14T16:23:02Z" finished-at="2019-08-14T16:23:55Z">
+    <test name="Test" duration-ms="67598" started-at="2019-08-22T10:39:34Z" finished-at="2019-08-22T10:40:42Z">
+      <class name="script.InvalidLoginScenarios">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:script.InvalidLoginScenarios@3ffc5af1]" name="openBrowser" is-config="true" duration-ms="7852" started-at="2019-08-22T16:09:34Z" finished-at="2019-08-22T16:09:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="testLogin()[pri:1, instance:script.LoginScenarios@61832929]" name="testLogin" duration-ms="7647" started-at="2019-08-14T16:23:55Z" finished-at="2019-08-14T16:24:02Z">
+        <test-method status="PASS" signature="testinvalidLogin()[pri:1, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin" duration-ms="1235" started-at="2019-08-22T16:09:42Z" finished-at="2019-08-22T16:09:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.LoginScenarios@61832929]" name="closeBrowser" is-config="true" duration-ms="1330" started-at="2019-08-14T16:24:02Z" finished-at="2019-08-14T16:24:04Z">
+        </test-method> <!-- testinvalidLogin -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.InvalidLoginScenarios@3ffc5af1]" name="closeBrowser" is-config="true" duration-ms="2359" started-at="2019-08-22T16:09:43Z" finished-at="2019-08-22T16:09:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=LoginScenarios.testLogin()[pri:1, instance:script.LoginScenarios@61832929] output={null}]]]>
+                <![CDATA[[TestResult name=testinvalidLogin status=SUCCESS method=InvalidLoginScenarios.testinvalidLogin()[pri:1, instance:script.InvalidLoginScenarios@3ffc5af1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testLogin is passed ]]>
+              <![CDATA[testinvalidLogin is passed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:script.InvalidLoginScenarios@3ffc5af1]" name="openBrowser" is-config="true" duration-ms="17021" started-at="2019-08-22T16:09:45Z" finished-at="2019-08-22T16:10:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testinvalidLogin2()[pri:2, instance:script.InvalidLoginScenarios@3ffc5af1]" name="testinvalidLogin2" duration-ms="5753" started-at="2019-08-22T16:10:02Z" finished-at="2019-08-22T16:10:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidLogin2 -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.InvalidLoginScenarios@3ffc5af1]" name="closeBrowser" is-config="true" duration-ms="2147" started-at="2019-08-22T16:10:08Z" finished-at="2019-08-22T16:10:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testinvalidLogin2 status=SUCCESS method=InvalidLoginScenarios.testinvalidLogin2()[pri:2, instance:script.InvalidLoginScenarios@3ffc5af1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testinvalidLogin2 is passed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- script.InvalidLoginScenarios -->
+      <class name="script.LoginScenarios">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:script.LoginScenarios@29774679]" name="openBrowser" is-config="true" duration-ms="17450" started-at="2019-08-22T16:10:10Z" finished-at="2019-08-22T16:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="testValidLogin()[pri:3, instance:script.LoginScenarios@29774679]" name="testValidLogin" duration-ms="9762" started-at="2019-08-22T16:10:28Z" finished-at="2019-08-22T16:10:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method status="PASS" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:script.LoginScenarios@29774679]" name="closeBrowser" is-config="true" duration-ms="4003" started-at="2019-08-22T16:10:38Z" finished-at="2019-08-22T16:10:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginScenarios.testValidLogin()[pri:3, instance:script.LoginScenarios@29774679] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidLogin is passed ]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- script.LoginScenarios -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
